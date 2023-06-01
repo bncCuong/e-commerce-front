@@ -10,7 +10,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <div className="w-full">
       <Header />
-      <main>{children}</main>
+      <div>{children}</div>
       <Footer />
     </div>
   );

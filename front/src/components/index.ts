@@ -3,3 +3,4 @@ export * from './header';
 export * from './layout';
 export * from './navbarLink';
 export * from './main';
+export * from './swiperSlide';
