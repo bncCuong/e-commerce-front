@@ -18,6 +18,8 @@ import 'swiper/css/free-mode';
 import { PlayCircleFilled } from '@ant-design/icons';
 
 const listUrl = [
+
+  
   {
     id: 1,
     src: 'https://is3-ssl.mzstatic.com/image/thumb/CvNCk6LFQGbwX_XWcd7gag/1378x774.jpg',
