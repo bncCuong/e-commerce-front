@@ -1,9 +1,10 @@
+import { MacPage } from '@/components';
 import React from 'react';
 
 type Props = {};
 
 const Mac = (props: Props) => {
-  return <div>Mac</div>;
+  return <MacPage />
 };
 
 export default Mac;

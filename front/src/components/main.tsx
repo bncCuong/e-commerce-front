@@ -62,7 +62,7 @@ export const Main = (props: Props) => {
           <p className="text-3xl sm:text-4xl xl:text-5xl font-semibold ">
             iPad Pro
           </p>
-          <p className="text-2xl flex items-center ">
+          <p className="text-2xl flex children-center ">
             Supercharged by{' '}
             <span>
               <Image

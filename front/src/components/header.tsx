@@ -9,9 +9,12 @@ import {
 import { useState } from 'react';
 import { NavbarLink } from './navbarLink';
 import { Drawer } from 'antd';
-type Props = {};
+type Props = {
+  bgColor?: boolean
 
-export const Header = (props: Props) => {
+};
+
+export const Header = ({bgColor}: Props) => {
   const mediaQuery = useMediaQuery('(min-width:834px)');
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
@@ -20,16 +23,16 @@ export const Header = (props: Props) => {
   };
   return (
     <header
-      className={`fixed top-0 z-50 left-0 w-full h-[45px] px-4 bg-[#434344] flex justify-center text-[#dadada] `}
+      className={`fixed top-0 z-50 left-0 w-full h-[45px] px-4 ${bgColor ? "bg-[#434344] text-[#dadada]" : "bg-white text-black"} flex justify-center `}
     >
       <div
-        className={`max-w-[1024px] w-full flex items-center justify-between `}
+        className={`max-w-[1024px] w-full flex children-center justify-between `}
       >
         <Link className="mb-1" href="/">
           <AppleFilled style={{ fontSize: '20px' }} />
         </Link>
         {mediaQuery && <NavbarLink inHeader={true} />}
-        <div className="flex items-center pb-1.5 space-x-4 cursor-pointer">
+        <div className="flex children-center pb-1.5 space-x-4 cursor-pointer">
           <p>
             <SearchOutlined style={{ fontSize: '20px' }} />
           </p>

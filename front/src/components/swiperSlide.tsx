@@ -107,7 +107,7 @@ export const SwiperCompo = () => {
             />
             <div className="absolute bottom-3 md:bottom-10 left-5 md:left-10">
               <button
-                className="px-2 py-1 md:px-4 md:py-2 bg-white text-black text-sm md:text-lg rounded-[40px] flex items-center gap-2
+                className="px-2 py-1 md:px-4 md:py-2 bg-white text-black text-sm md:text-lg rounded-[40px] flex children-center gap-2
               hover:bg-white/80 animate duration-200 "
               >
                 Stream now{' '}

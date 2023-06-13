@@ -1,9 +1,10 @@
 import React from 'react';
+import { Store as StorePage } from '@/components';
 
 type Props = {};
 
 const Store = (props: Props) => {
-  return <div>Store</div>;
+  return  <StorePage />
 };
 
 export default Store;
